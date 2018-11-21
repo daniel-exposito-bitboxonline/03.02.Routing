@@ -5,3 +5,13 @@ web_profiler_wdt:
 web_profiler_profiler:
     resource: '@WebProfilerBundle/Resources/config/routing/profiler.xml'
     prefix: /_profiler
+
+user_getListUser_test:
+    path: /auth/list_user/test/
+    controller: App\Controller\UserController::getListUser
+
+user_getDataUser_test:
+    path: /auth/get_data_user/test/{id}
+    controller: App\Controller\UserController::getDataUser
+    requirements:
+        id: '\d+'
