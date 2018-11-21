@@ -1,0 +1,7 @@
+# config/routes.yaml
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+routing_distributed_v1:
+  resource: '../src/Resources/config/routing.yaml'
+  type: yaml
